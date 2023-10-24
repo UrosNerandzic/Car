@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+.carstore {
+  color: grey;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.roud {
+  height: 200px;
+
+  position: relative;
+  background: #222 url("./../img/line.png") repeat-x center;
+}
+
+select.error {
+  border: 1px solid red;
+}
+
+p.error {
+  color: red;
+}
+
+#car {
+  width: 5%;
+  height: 45px;
+  position: absolute;
+  bottom: 20px;
+  left: 0%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.5s linear;
+}
+
+.light {
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  right: 7px;
+  margin-top: -3px;
+  border-radius: 50%;
+}
+
+.yellow {
+  background: yellow;
+}
+
+#light1 {
+  top: 11px;
+}
+
+#light2 {
+  bottom: 7px;
+}
+
+#fuelBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  display: none;
+}
+
+#currenFuelState {
+  width: 100%;
+  height: 100%;
+  background: red;
+}
+p.error {
+  color: red;
+}
+.form-group {
+  display: inline-block;
+  vertical-align: top;
+}
+button {
+  border: 1px solid #000;
+  border-radius: 3px;
+  padding: 5px 10px;
+  font-size: 16px;
+  background: #eee;
+}
+.form-control {
+  width: 250px;
+  height: 30px;
+  border: 1px solid #000;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  font-size: 15px;
+  background-color: transparent;
+}
+button {
+  background-color: transparent;
+}
+#barrier {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+}
+
+@keyframes signal {
+  50% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: "yellow";
+  }
+}
+
+.signal {
+  animation: signal 5 0.3s linear;
+}
+
+.controls button {
+  display: none;
+}
+
+.controls .active {
+  display: inline-block;
+}
+
+.controls .purchase {
+  display: none;
+}
+.controls .purchase ~ button {
+  display: inline-block;
+}
